@@ -11,8 +11,9 @@ A simple and efficient React-based web application that allows users to write Ma
 
 ## Screenshots
 
-![Main Interface](public/screens/home_screen.png)
-![Editor View & Rendered Output](public/screens/print_screen.png)
+| Main Interface | Editor View & Rendered Output |
+| :---: | :---: |
+| ![Main Interface](public/screens/home_screen.png) | ![Editor View & Rendered Output](public/screens/print_screen.png) |
 
 ## Getting Started
 
