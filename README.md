@@ -26,12 +26,12 @@ A simple and efficient React-based web application that allows users to write Ma
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/markdown-preview.git
+   git clone https://github.com/aadhar41/react-markdown-previewer.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd markdown-preview
+   cd react-markdown-previewer
    ```
 
 3. Install dependencies:
