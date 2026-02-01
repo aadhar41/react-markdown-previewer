@@ -46,13 +46,6 @@ A simple and efficient React-based web application that allows users to write Ma
 
 The application will be available at `http://localhost:3000`.
 
-## Technologies Used
-
-- **React**: Frontend library for building the user interface.
-- **Marked**: A low-level markdown compiler for parsing markdown.
-- **DOMPurify**: To sanitize the HTML output and prevent XSS attacks.
-- **CSS3**: For custom styling and layout.
-
 ## Project Structure
 
 ```text
@@ -65,3 +58,23 @@ markdown-preview/
 │   └── index.js         # Entry point
 └── README.md
 ```
+
+## Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Author
+
+**Aadhar Gaur**
+
+- **GitHub**: [@aadhar41](https://github.com/aadhar41)
+- **LinkedIn**: [aadhar-gaur-php](https://linkedin.com/in/aadhar-gaur-php)
+
+## Acknowledgments
+
+- [React Markdown](https://github.com/remarkjs/react-markdown) for the core rendering logic.
+- Built with ❤️ by Aadhar Gaur.
