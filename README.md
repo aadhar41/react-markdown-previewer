@@ -25,21 +25,25 @@ A simple and efficient React-based web application that allows users to write Ma
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/aadhar41/react-markdown-previewer.git
    ```
 
 2. Navigate to the project directory:
+
    ```bash
    cd react-markdown-previewer
    ```
 
 3. Install dependencies:
+
    ```bash
    npm install
    ```
 
 4. Start the development server:
+
    ```bash
    npm start
    ```
@@ -59,22 +63,37 @@ markdown-preview/
 └── README.md
 ```
 
-## Contributing
+---
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+## 🤝 Community & Contributions
 
-## License
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+- **Code of Conduct**: Please read our [Code of Conduct](CODE_OF_CONDUCT.md) to understand the standards of behavior we expect in our community.
+- **Contributing**: Check out the [Contributing Guidelines](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+- **Security**: Please refer to our [Security Policy](SECURITY.md).
+- **Issue Templates**: When opening an issue, please use the provided [Bug Report](.github/ISSUE_TEMPLATE/bug_report.md) or [Feature Request](.github/ISSUE_TEMPLATE/feature_request.md) templates.
+
+---
+
+## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Author
+---
 
-**Aadhar Gaur**
+## 👤 Author
+
+### Aadhar Gaur
 
 - **GitHub**: [@aadhar41](https://github.com/aadhar41)
 - **LinkedIn**: [aadhar-gaur-php](https://linkedin.com/in/aadhar-gaur-php)
 
-## Acknowledgments
+**Co-authored-by**: Aadhar gaur <aadhargaur41@users.noreply.github.com>
+
+---
+
+## 🏆 Acknowledgments
 
 - [React Markdown](https://github.com/remarkjs/react-markdown) for the core rendering logic.
 - Built with ❤️ by Aadhar Gaur.

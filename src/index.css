@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
 /*
 =============== 
 Variables
@@ -64,8 +66,18 @@ Global Styles
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    "Nunito",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
   color: var(--clr-grey-1);
   line-height: 1.6;
@@ -555,14 +567,15 @@ textarea::-webkit-scrollbar-thumb:hover,
 
 /*
 =============== 
-Print Styles
+Print Styles (PDF Generation)
 ===============
 */
 
 @media print {
-  /* Set page margins for all pages */
+  /* Set page margins for professional PDF */
   @page {
-    margin: 2rem;
+    margin: 2.5cm 2cm;
+    size: A4;
   }
 
   .header,
@@ -571,157 +584,146 @@ Print Styles
     display: none !important;
   }
 
-  .main-container {
-    display: block;
-  }
-
+  .main-container,
   .markdown-container {
-    display: block;
+    display: block !important;
+    background: white !important;
   }
 
   .result {
-    padding: 2.5rem 1rem;
-    box-shadow: none;
+    padding: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    font-family: "Nunito", serif !important;
+    font-size: 11pt !important;
+    color: #333 !important;
+    line-height: 1.6 !important;
   }
 
-  /* Fix H1 visibility - remove gradient effect that doesn't print */
+  /* Executive Heading Styles */
   .result h1 {
+    font-size: 24pt !important;
+    margin-top: 0 !important;
+    margin-bottom: 20pt !important;
+    padding-bottom: 5pt !important;
+    border-bottom: 2pt solid #444 !important;
     background: none !important;
-    -webkit-background-clip: unset !important;
-    -webkit-text-fill-color: #1a1a1a !important;
-    background-clip: unset !important;
-    color: #1a1a1a !important;
-    border-bottom: 3px solid #333;
-  }
-
-  /* Smart page breaks - trigger when new section starts AND page overflows */
-
-  /* H1 = Major section - break if page would overflow */
-  .result h1 {
-    page-break-before: auto;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: #000 !important;
+    color: #000 !important;
     page-break-after: avoid;
-    page-break-inside: avoid;
-    margin-top: 0;
-    padding-top: 2rem;
-    orphans: 4;
-    widows: 4;
   }
 
-  /* First H1 never breaks before */
-  .result h1:first-child {
-    page-break-before: avoid;
-    padding-top: 0;
-  }
-
-  /* H1 not first - prefer page break if there's content before it */
-  .result h1:not(:first-child) {
-    page-break-before: auto;
-    margin-top: 3rem;
-  }
-
-  /* H2 = Subsection - break if page is getting full */
   .result h2 {
-    page-break-before: auto;
+    font-size: 18pt !important;
+    margin-top: 25pt !important;
+    margin-bottom: 12pt !important;
+    border-bottom: 1pt solid #ccc !important;
     page-break-after: avoid;
-    page-break-inside: avoid;
-    padding-top: 1.5rem;
-    orphans: 3;
-    widows: 3;
   }
 
-  /* H3/H4 = Minor sections - avoid breaks unless page overflow forces it */
-  .result h3,
-  .result h4 {
-    page-break-before: avoid;
+  .result h3 {
+    font-size: 14pt !important;
+    margin-top: 15pt !important;
+    margin-bottom: 8pt !important;
     page-break-after: avoid;
-    page-break-inside: avoid;
-    orphans: 2;
-    widows: 2;
   }
 
-  /* Ensure headings have enough content after them to justify staying on page */
-  .result h1,
-  .result h2 {
-    min-height: 2em;
-  }
-
-  .result h3,
   .result h4 {
-    min-height: 1.5em;
+    font-size: 12pt !important;
+    font-weight: bold !important;
+    margin-top: 12pt !important;
+    page-break-after: avoid;
   }
 
-  /* Keep content blocks together */
   .result p {
-    page-break-inside: avoid;
+    margin-bottom: 12pt !important;
     orphans: 3;
     widows: 3;
   }
 
+  /* List Styling */
   .result ul,
   .result ol {
-    page-break-inside: avoid;
+    margin-bottom: 15pt !important;
+    padding-left: 25pt !important;
   }
 
   .result li {
-    page-break-inside: avoid;
+    margin-bottom: 5pt !important;
   }
 
-  /* Code blocks stay together */
+  /* Professional Code Blocks */
   .result pre {
+    background: #f8f9fa !important;
+    border: 1px solid #dee2e6 !important;
+    border-left: 4px solid #6c757d !important;
+    padding: 12pt !important;
+    font-family: "Courier New", Courier, monospace !important;
+    font-size: 9pt !important;
     page-break-inside: avoid;
-    page-break-before: auto;
-    background: #f5f5f5 !important;
-    border: 1px solid #ccc !important;
-    padding: 1rem !important;
-  }
-
-  .result pre code {
-    color: #000 !important;
+    white-space: pre-wrap !important;
   }
 
   .result code {
-    background: #f0f0f0 !important;
-    color: #000 !important;
-    border: 1px solid #ddd !important;
+    background: #f1f3f5 !important;
+    color: #495057 !important;
+    padding: 1pt 3pt !important;
+    font-size: 9.5pt !important;
+    border: 0.5pt solid #dee2e6 !important;
   }
 
-  /* Tables stay together */
-  .result table {
+  /* Premium Blockquotes */
+  .result blockquote {
+    border-left: 4pt solid #dee2e6 !important;
+    padding: 10pt 20pt !important;
+    background: #fcfcfc !important;
+    font-style: italic !important;
+    margin: 15pt 0 !important;
     page-break-inside: avoid;
-    page-break-before: auto;
+  }
+
+  /* Tables */
+  .result table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 15pt 0 !important;
+    page-break-inside: auto;
   }
 
   .result th {
-    background: #333 !important;
-    color: #fff !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    background: #e9ecef !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    border: 1pt solid #dee2e6 !important;
   }
 
-  /* Blockquotes stay together */
-  .result blockquote {
-    page-break-inside: avoid;
-    background: #f9f9f9 !important;
-    border-left: 4px solid #666 !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+  .result td {
+    border: 1pt solid #dee2e6 !important;
+    padding: 6pt !important;
   }
 
   /* Images */
   .result img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 20pt auto !important;
     page-break-inside: avoid;
-    max-width: 100%;
   }
 
-  /* Links - show URL in print */
+  /* Links */
   .result a {
-    color: #000 !important;
-    text-decoration: underline;
+    color: #0056b3 !important;
+    text-decoration: none !important;
+    border-bottom: 0.5pt solid #0056b3 !important;
   }
 
-  .result a[href^="http"]:after {
-    content: " (" attr(href) ")";
-    font-size: 0.8em;
-    color: #666;
+  /* Page Break Helpers */
+  .result h1 {
+    page-break-before: always;
+  }
+  .result h1:first-child {
+    page-break-before: auto;
   }
 }
