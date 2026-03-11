@@ -89,6 +89,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - **GitHub**: [@aadhar41](https://github.com/aadhar41)
 - **LinkedIn**: [aadhar-gaur-php](https://linkedin.com/in/aadhar-gaur-php)
 
+**Co-authored-by**: Aadhar gaur <aadhargaur41@users.noreply.github.com>
+
 ---
 
 ## 🏆 Acknowledgments
