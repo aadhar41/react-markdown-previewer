@@ -1,36 +1,35 @@
 # Contributing to Markdown Previewer
 
-First off, thanks for taking the time to contribute! 🎉
-
-The following is a set of guidelines for contributing to the Markdown Previewer project.
+First off, thank you for considering contributing to this project!
 
 ## How Can I Contribute?
 
 ### Reporting Bugs
 
-If you find a bug, please create an issue with:
+If you find a bug, please create a new issue using the **Bug Report** template.
 
-- A clear and descriptive title.
-- Steps to reproduce the bug.
-- A description of the expected and actual behavior.
-- Any relevant screenshots or logs.
+### Suggesting Enhancements
 
-### Feature Requests
-
-If you have an idea for a new feature, feel free to open an issue to discuss it.
+Use the **Feature Request** template to suggest new features or improvements.
 
 ### Pull Requests
 
-- Fork the repository.
-- Create a new branch for your feature or bug fix.
-- Make your changes.
-- Ensure the code follows the existing style.
-- Submit a pull request.
+1. Fork the repository and create your branch from `master` or `dev`.
+2. Ensure your changes are well-tested.
+3. Issue a pull request!
 
 ## Style Guide
 
-- Use consistent indentation (2 spaces).
-- Write clean, readable code.
-- Comment complex logic where necessary.
+### Git Commit Messages
 
-Thank you!
+- Use the present tense ("Add feature" not "Added feature").
+- Limit the first line to 72 characters or less.
+
+### Code Style
+
+- Stick to existing formatting (React/JS Standard).
+- Comment complex logic.
+
+## Questions?
+
+Reach out to <aadhar41@gmail.com>.
